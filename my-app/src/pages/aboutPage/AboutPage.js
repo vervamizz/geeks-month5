@@ -1,11 +1,15 @@
-import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import {useDispatch} from "react-redux";
+import {asyncFunctionAction} from "../../redux/actions";
+
+import (useDispatch)
+
 const AboutPage = () => {
-    const aboutTitle = useSelector(state => state.aboutTitle);
+    const dispatch = useDispatch();
+
     return (
         <div>
-            <h1>{ aboutTitle}</h1>
+            <button onClick={()=> dispatch(asyncFunctionAction())}>after 2s</button>
         </div>
-)
+    )
 }
 export default AboutPage;

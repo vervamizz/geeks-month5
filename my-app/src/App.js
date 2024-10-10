@@ -1,18 +1,15 @@
 import './App.css';
-import ChangeTitle from './components/ChangeTitle';
-import AboutPage from "./pages/aboutPage/AboutPage";
 import MainPage from "./pages/mainPage/MainPage";
-import ContactPage from "./contactPage/ContactPage";
-import Counter from "./components/counter/Counter";
+import AboutPage from "./pages/aboutPage/AboutPage";
+import UserPage from "./pages/usersPage/UsersPage";
+import Calculator from "./components/Calculator";
 
 function App() {
   return (
     <div className="App">
       {/*<MainPage/>*/}
-      {/*  <AboutPage />*/}
-      {/*  <ChangeTitle/>*/}
-      {/*  <ContactPage />*/}
-        <Counter/>
+        <UserPage/>
+        <Calculator />
     </div>
   );
 }
