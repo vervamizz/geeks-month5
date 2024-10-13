@@ -21,6 +21,9 @@ export function fetchUsersAction() {
         dispatch(getUserAction(data))
     }
 }
+
+
+
 export function fetchQuote () {
     return async function (dispatch) {
     dispatch({type: "FETCH_QUOTE_REQUEST"});
@@ -34,9 +37,10 @@ export function fetchQuote () {
             author: data.author
         })
     } catch (error) {
-        dispatch({type: "FETCH_QUOTE_FAILURE",
-             payload: "error"})
-
+        dispatch({
+            type: "FETCH_QUOTE_FAILURE",
+            payload: "Failed to fetch quote",
+        })
         }
     }
 }

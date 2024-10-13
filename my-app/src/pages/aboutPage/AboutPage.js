@@ -1,7 +1,6 @@
 import {useDispatch} from "react-redux";
 import {asyncFunctionAction} from "../../redux/actions";
 
-import (useDispatch)
 
 const AboutPage = () => {
     const dispatch = useDispatch();
